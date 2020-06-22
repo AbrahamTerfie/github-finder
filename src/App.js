@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/layout/Navbar';
 import Users from './components/users/Users';
 import axios from 'axios';
-
+import Search from './components/users/Search';
 
 class App extends Component {
 
@@ -37,7 +37,7 @@ class App extends Component {
 
         <Navbar />
         <div className="container">
-
+          <Search />
           <Users loading={this.state.loading} users={this.state.users} />
         </div>
 
